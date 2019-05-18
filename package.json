@@ -1,7 +1,7 @@
 {
   "name": "ghp-boilerplate",
   "version": "1.0.0",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": "Charles Hudson",
   "description": "Github Pages Boilerplate",
   "keywords": [
