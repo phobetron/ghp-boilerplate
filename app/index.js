@@ -9,7 +9,7 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   routes,
   linkActiveClass: 'active',
-  mode: 'history',
+  mode: 'hash',
 })
 
 const app = new Vue({
