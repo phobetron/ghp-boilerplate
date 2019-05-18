@@ -47,7 +47,7 @@ const config = {
     new webpack.HashedModuleIdsPlugin(),
   ],
   output: {
-    publicPath: '/assets/',
+    publicPath: '/ghp-boilerplate/assets/',
     path: path.resolve(__dirname, 'assets'),
     filename: 'javascript/[name].[contenthash].js',
     chunkFilename: 'javascript/[name].[contenthash].js',
