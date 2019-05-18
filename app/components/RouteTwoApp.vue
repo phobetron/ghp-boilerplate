@@ -1,11 +1,10 @@
 <template>
-  <h2>Page</h2>
+  <h2>Route Two</h2>
 </template>
 
 <script>
 export default {
-  name: 'PageApp',
-  mounted: () => {console.log('hiya')},
+  name: 'RouteTwoApp',
 }
 </script>
 

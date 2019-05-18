@@ -1,11 +1,10 @@
 <template>
-  <h2>Home</h2>
+  <h2>Route One</h2>
 </template>
 
 <script>
 export default {
-  name: 'HomeApp',
-  mounted: () => {console.log('heya')},
+  name: 'RouteOneApp',
 }
 </script>
 

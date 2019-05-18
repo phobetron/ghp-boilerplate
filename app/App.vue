@@ -1,13 +1,13 @@
 <template>
   <div>
-    <router-link to="/">
-      Home
+    <router-view />
+
+    <router-link to="/one">
+      Route One
     </router-link>
     |
-    <router-link to="/page">
-      Page
+    <router-link to="/two">
+      Route Two
     </router-link>
-
-    <router-view />
   </div>
 </template>

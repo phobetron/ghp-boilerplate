@@ -1,16 +1,16 @@
-import HomeApp from '@/components/HomeApp'
-import PageApp from '@/components/PageApp'
+import RouteOneApp from '@/components/RouteOneApp'
+import RouteTwoApp from '@/components/RouteTwoApp'
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: HomeApp,
+    path: '/one',
+    name: 'Route One',
+    component: RouteOneApp,
   },
   {
-    path: '/page',
-    name: 'Page',
-    component: PageApp,
+    path: '/two',
+    name: 'Route Two',
+    component: RouteTwoApp,
   },
 ]
 
