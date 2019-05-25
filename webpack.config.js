@@ -9,8 +9,6 @@ const UglifyJSWebpackPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
-const isDev = process.env.NODE_ENV !== 'production'
-
 const config = {
   mode: 'development',
   devtool: 'inline-source-map',
@@ -21,6 +19,7 @@ const config = {
   resolve: {
     extensions: [ '.js', '.vue' ],
     alias: {
+      'vue$': 'vue/dist/vue.esm.js',
       '@': path.resolve(__dirname, 'app'),
     },
   },
@@ -109,7 +108,7 @@ const config = {
   }
 }
 
-module.exports = isDev ? config : merge(config, {
+module.exports = process.env.NODE_ENV !== 'production' ? config : merge(config, {
   mode: 'production',
   devtool: 'source-map',
 })

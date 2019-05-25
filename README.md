@@ -1,6 +1,7 @@
 # Github Pages Boilerplate
 
-Including Jekyll, Webpack, Babel, and Vue.
+Including Jekyll, Webpack, Babel, and Vue. See it in action here:
+[https://charleshudson.com/ghp-boilerplate](https://charleshudson.com/ghp-boilerplate)
 
 ## Development
 To run:

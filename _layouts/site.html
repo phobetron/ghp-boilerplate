@@ -5,20 +5,10 @@
 
     {% include styles.html %}
   </head>
-  <body>
-    <header>
-      {% include header.html %}
-    </header>
+  <body class="page-{{ page.name | split: '.' | first }}">
+    {% include sprites.html %}
 
-    <main>
-      {{ content }}
-
-      {% include posts.html %}
-    </main>
-
-    <footer>
-      {% include footer.html %}
-    </footer>
+    {{ content }}
 
     {% include scripts.html %}
   </body>

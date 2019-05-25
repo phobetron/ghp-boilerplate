@@ -3,13 +3,13 @@ import RouteTwoApp from '@/components/RouteTwoApp'
 
 const routes = [
   {
-    path: '/one',
-    name: 'Route One',
+    path: '/',
+    name: 'About',
     component: RouteOneApp,
   },
   {
-    path: '/two',
-    name: 'Route Two',
+    path: '/blog',
+    name: 'Blog Articles',
     component: RouteTwoApp,
   },
 ]
