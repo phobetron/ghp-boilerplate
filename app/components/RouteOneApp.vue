@@ -12,9 +12,7 @@
 
         <p>To run:</p>
 
-        <samp>
-          &gt; npm run dev
-        </samp>
+        <prism language="shell">&gt; npm run dev</prism>
 
         <p>
           Dev mode currently uses <code>webpack --watch</code> and <code>jekyll serve</code>.
@@ -27,17 +25,20 @@
 
         <p>To build:</p>
 
-        <samp>
-          &gt; npm run build
-        </samp>
+        <prism language="shell">&gt; npm run build</prism>
       </section>
     </div>
   </article>
 </template>
 
 <script>
+import Prism from 'vue-prism-component'
+
 export default {
   name: 'RouteOneApp',
+  components: {
+    Prism,
+  },
 }
 </script>
 

@@ -1,3 +1,17 @@
 {
-  "presets": ["@babel/preset-env"]
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+    ["prismjs", {
+        "languages": [
+          "ruby",
+          "javascript",
+          "css",
+          "sass",
+          "markup"
+        ],
+        "plugins": ["line-numbers"],
+        "theme": "twilight",
+        "css": true
+    }]
+  ]
 }
