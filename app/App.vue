@@ -2,7 +2,7 @@
   <div>
     <nav>
       <ul>
-        <li><router-link to="/">About</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/blog">Blog Articles</router-link></li>
       </ul>
     </nav>
@@ -22,7 +22,11 @@ export default {
 <style scoped>
 nav {
   background: #24292e;
-  margin: -1em -2em 0;
+  margin: -1em -1em 0;
+
+  @media (min-width: 667px) {
+    margin: -1em -2em 0;
+  }
 
   > ul {
     align-items: center;
@@ -55,6 +59,10 @@ nav {
 
         &:hover {
           color: #ddd;
+        }
+
+        &.active {
+          font-weight: bold;
         }
       }
     }

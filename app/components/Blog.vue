@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'RouteTwoApp',
+  name: 'Blog',
 }
 </script>
 

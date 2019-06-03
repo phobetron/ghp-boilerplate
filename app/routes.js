@@ -1,16 +1,16 @@
-import RouteOneApp from '@/components/RouteOneApp'
-import RouteTwoApp from '@/components/RouteTwoApp'
+import About from '@/components/About'
+import Blog from '@/components/Blog'
 
 const routes = [
   {
-    path: '/',
+    path: '/about',
     name: 'About',
-    component: RouteOneApp,
+    component: About,
   },
   {
     path: '/blog',
     name: 'Blog Articles',
-    component: RouteTwoApp,
+    component: Blog,
   },
 ]
 

@@ -3,62 +3,6 @@
 * {
   box-sizing: border-box;
 }
-html {
-  font-size: .8em;
-  height: 100%;
-}
-body {
-  background: $bg;
-  color: $fg;
-  display: grid;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  grid-template-rows: 7rem auto 6rem;
-  line-height: 1.2;
-  margin: 0;
-  min-height: 100%;
-
-  > header {
-    align-items: center;
-    background-color: $header-bg;
-    background-position: 0 bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: $header-fg;
-    display: flex;
-    flex-flow: row;
-    font-size: 2em;
-    grid-row: 1;
-    justify-content: space-around;
-    padding: 1ex 1rem;
-    text-align: center;
-    text-shadow: $header-shadow;
-
-    div {
-    }
-
-    h1, p {
-      margin: 0;
-    }
-    p {
-      font-size: 1.175em;
-    }
-  }
-
-  > footer {
-    grid-row: 3;
-    padding: 1rem;
-    text-align: center;
-  }
-}
-main, body > article {
-  grid-row: 2;
-
-  > section, > article {
-    margin: 1em 0 1.5em;
-    padding: 0 1rem 0;
-  }
-}
-
 h1, h2, h3, h4 {
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   font-weight: normal;
@@ -90,10 +34,6 @@ address {
   }
 }
 
-ul {
-  padding-left: 1em;
-}
-
 dl {
   display: flex;
   flex-flow: row wrap;
@@ -115,39 +55,6 @@ dd {
   margin: 0;
 }
 
-@media print, (min-width: 1024px) {
-  html {
-    font-size: 1em;
-  }
-  body {
-    grid-template-rows: 10rem auto 5rem;
-
-    > header, > footer {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  }
-  main, body > article {
-    > section, > article {
-      padding: 0 2rem;
-    }
-  }
-}
-
-@media print {
-  html {
-    font-size: .65em;
-  }
-  body {
-    display: block;
-
-    > header {
-      height: 1.5in;
-      padding: 1ex .5in;
-
-      div {
-        left: .75in;
-      }
-    }
-  }
+ul {
+  padding-left: 1em;
 }

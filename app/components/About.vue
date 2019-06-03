@@ -35,7 +35,7 @@
 import Prism from 'vue-prism-component'
 
 export default {
-  name: 'RouteOneApp',
+  name: 'About',
   components: {
     Prism,
   },
@@ -43,13 +43,15 @@ export default {
 </script>
 
 <style scoped>
-.sections {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+@media (min-width: 667px) {
+  .sections {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 
-  section {
-    flex-basis: 45%;
+    section {
+      flex-basis: 45%;
+    }
   }
 }
 </style>
