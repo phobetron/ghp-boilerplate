@@ -24,7 +24,7 @@ nav {
   background: #24292e;
   margin: -1em -1em 0;
 
-  @media (min-width: 667px) {
+  @media (min-width: 1024px) {
     margin: -1em -2em 0;
   }
 
