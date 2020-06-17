@@ -7,10 +7,13 @@
           "javascript",
           "css",
           "sass",
-          "markup"
+          "markup",
+          "bash",
+          "shell",
+          "shell-session"
         ],
         "plugins": ["line-numbers"],
-        "theme": "twilight",
+        "theme": "okaidia",
         "css": true
     }]
   ]

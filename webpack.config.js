@@ -5,9 +5,11 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
-const UglifyJSWebpackPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
+
+const isDev = process.env.NODE_ENV !== 'production'
 
 const config = {
   mode: 'development',
@@ -70,17 +72,16 @@ const config = {
         },
       },
     },
+    minimize: true,
     minimizer: [
+      new TerserPlugin({
+        sourceMap: true,
+      }),
       new OptimizeCSSAssetsPlugin({
         cssProcessorOptions: { map: { inline: false } },
         cssProcessorPluginOptions: {
           preset: [ 'default', { discardComments: { removeAll: true } } ],
         },
-      }),
-      new UglifyJSWebpackPlugin({
-        cache: true,
-        parallel: true,
-        sourceMap: true,
       }),
     ],
   },
@@ -108,7 +109,7 @@ const config = {
   }
 }
 
-module.exports = process.env.NODE_ENV !== 'production' ? config : merge(config, {
+module.exports = isDev ? config : merge(config, {
   mode: 'production',
   devtool: 'source-map',
 })

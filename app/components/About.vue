@@ -12,7 +12,7 @@
 
         <p>To run:</p>
 
-        <prism language="shell">&gt; npm run dev</prism>
+        <pre><code class="lang-shell-session">$ npm run dev</code></pre>
 
         <p>
           Dev mode currently uses <code>webpack --watch</code> and <code>jekyll serve</code>.
@@ -25,20 +25,20 @@
 
         <p>To build:</p>
 
-        <prism language="shell">&gt; npm run build</prism>
+        <pre><code class="lang-shell-session">$ npm run build</code></pre>
       </section>
     </div>
   </article>
 </template>
 
 <script>
-import Prism from 'vue-prism-component'
+import Prism from 'prismjs'
 
 export default {
   name: 'About',
-  components: {
-    Prism,
-  },
+  mounted: function () {
+    Prism.highlightAll();
+  }
 }
 </script>
 
